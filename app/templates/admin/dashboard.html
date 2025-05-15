@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <h1>Dashboard</h1>
+
+  <form action=" /admin/dashboard/products">
+    <button type="submit">Anuncios</button>
+  </form>
+
+  <form action="/admin/dashboard/users">
+    <button type="submit">Usuários</button>
+  </form>
+
+  <form action="/admin/dashboard/reports">
+    <button type="submit">Reportes</button>
+  </form>
+
+  <form action="/admin/dashboard/logout" method="post">
+    <button type="submit">Logout</button>
+  </form>
+  <h1>Ultimos 5 Anuncios</h1>
+  <table id="anuncios_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Vendedor</th>
+      </tr>
+    </thead>
+    <tbody id="anuncios_div">
+      <!-- As linhas serão inseridas aqui -->
+    </tbody>
+  </table>
+
+  <h1>Ultimos 5 Reports</h1>
+  <table id="report_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Chamado</th>
+        <th>Usuario</th>
+        <th>Titulo</th>
+        <th>Info</th>
+      </tr>
+    </thead>
+    <tbody id="report_div">
+      <!-- As linhas serão inseridas aqui -->
+    </tbody>
+  </table>
+
+  <h1>Ultimos 5 Usuarios Cadastrados</h1>
+  <table id="user_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Estado</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody id="user_div">
+      <!-- As linhas serão inseridas aqui -->
+    </tbody>
+  </table>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../static/js/dashboard.js"></script>
+
+</html>

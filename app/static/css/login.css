@@ -1,0 +1,35 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url("../font/JetBrainsMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: JetBrainsBold;
+  src: url("../font/JetBrainsMono-Bold.woff2");
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  justify-items: right;
+}
+.welcome_div {
+  height: 100%;
+  width: 60%;
+  font-size: 16px;
+  font-family: JetBrainsBold;
+}
+
+.data_div {
+  height: 100%;
+  width: 40%;
+}
+
+.form_div {
+  font-size: 16px;
+  font-family: JetBrainsBold;
+}

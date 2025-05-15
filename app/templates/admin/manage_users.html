@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Usuario</title>
+</head>
+
+<body>
+  <form action="/update_user" method="post">
+    <div style="width: 300px; display: flex; flex-direction: column;">
+      <input type="hidden" name="id" value="{{ user.id }}">
+      <label>Nome</label>
+      <input id="nome" type="text" name="nome" value="{{ user.nome }}">
+
+      <label>Email</label>
+      <input id="email" type="email" name="email" value="{{ user.email }}">
+
+      <label>Telefone</label>
+      <input id="telefone" type="text" name="telefone" value="{{ user.telefone }}">
+
+      <label>Cidade</label>
+      <input id="cidade" type="text" name="cidade" value="{{ user.cidade }}">
+
+      <label>Estado</label>
+      <input id="estado" type="text" name="estado" value="{{ user.estado }}">
+
+      <label>Idade</label>
+      <input id="idade" type="number" name="idade" value="{{ user.idade }}">
+
+      <button type="submit">Atualizar</button>
+    </div>
+  </form>
+
+
+
+  <form action="/admin/dashboard/users">
+    <button type="submit">Voltar</button>
+  </form>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="{{ url_for('static', filename='js/manage_users.js') }}"></script>
+
+</html>

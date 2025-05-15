@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuncios</title>
+</head>
+
+<body>
+  <h1>
+    Gerenciador de Anuncios
+  </h1>
+
+  <form action="/admin/dashboard">
+    <button type="submit">Dashboard</button>
+  </form>
+
+  <table id="anuncios_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Vendedor</th>
+      </tr>
+    </thead>
+    <tbody id="anuncios_div">
+      <!-- As linhas serão inseridas aqui -->
+    </tbody>
+  </table>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../static/js/products.js"></script>
+
+</html>

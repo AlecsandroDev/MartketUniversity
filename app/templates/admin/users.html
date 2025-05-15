@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios</title>
+</head>
+
+<body>
+  <h1>
+    Gerenciador de Usuarios
+  </h1>
+
+  <form action="/admin/dashboard">
+    <button type="submit">Dashboard</button>
+  </form>
+
+  <table id="user_table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Idade</th>
+        <th>Atualizar</th>
+      </tr>
+    </thead>
+    <tbody id="user_div">
+      <!-- As linhas serão inseridas aqui -->
+    </tbody>
+  </table>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../static/js/users.js"></script>
+
+</html>
